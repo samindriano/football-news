@@ -18,11 +18,11 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", 'samuel-indriano-footballnews.pbp.cs.ui.ac.id']
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "samuel-indriano-footballnews.pbp.cs.ui.ac.id", ""]
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+# test test
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
