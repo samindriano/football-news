@@ -8,7 +8,7 @@ class TestMain(TestCase):
 
     def test_main_using_main_template(self):
         response = Client().get('/')
-        self.assertTemplateUsed(response, 'main.html')
+        self.assertTemplateUsed(response, 'main/main.html')
 
     def test_nonexistent_page(self):
         response = Client().get('/burhan_always_exists/')
