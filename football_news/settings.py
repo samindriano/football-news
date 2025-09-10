@@ -19,6 +19,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "samuel-indriano-footballnews.pbp.cs.ui.ac.id"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://samuel-indriano-footballnews.pbp.cs.ui.ac.id/"
+]
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -63,7 +66,7 @@ ROOT_URLCONF = 'football_news.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+         'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
