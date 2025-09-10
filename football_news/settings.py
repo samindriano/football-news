@@ -20,7 +20,7 @@ load_dotenv()
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "samuel-indriano-footballnews.pbp.cs.ui.ac.id"]
 CSRF_TRUSTED_ORIGINS = [
-    "https://samuel-indriano-footballnews.pbp.cs.ui.ac.id/"
+    "https://samuel-indriano-footballnews.pbp.cs.ui.ac.id"
 ]
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
