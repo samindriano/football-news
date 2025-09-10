@@ -4,10 +4,12 @@ from main.models import News
 
 # Create your views here.
 def show_main(request):
+    news_list = News.objects.all()
     context = {
         'npm' : '2406400524',
         'name': 'Samuel Indriano',
-        'class': 'PBP B'
+        'class': 'PBP B',
+        'news_list': news_list
     }
 
     return render(request, "main.html", context)
